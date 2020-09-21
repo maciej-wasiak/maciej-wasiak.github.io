@@ -1,6 +1,7 @@
 @import "~normalize.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 @import "_variables";
 @import "modules/hello.scss";
@@ -120,6 +121,62 @@ body {
   &__paragraph {
     color: $font-color-2;
     text-align: center;
+  }
+
+  & .project {
+    background-color: #212528;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 24px 0;
+  
+    &__titlebar {
+      background-color: #1E1E1E;
+      border-radius: 16px 16px 0 0;
+      color: #464A4D;
+      display: block;
+      font-size: 24px;
+      height: 8px;
+      padding: 8px 16px 24px;
+    }
+  
+    &__github-logo {
+      align-self: flex-start;
+      filter: brightness(1000%);
+      margin: 24px 16px;
+    }
+
+    &__content {
+      color: #808082;
+      column-gap: 4px;
+      display: grid;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 13px;
+      grid-template: repeat(4, auto) / auto 1fr;
+      line-height: 24px;
+      margin: 0 16px 24px;
+      row-gap: 8px;
+      text-align: right;
+
+      &--title, &--description, &--demo, &--github {
+        text-align: left;
+      }
+
+      &--title {
+        color: #ffffff;
+      }
+
+      &--description {
+        color: #A3A3A3;
+      }
+
+      & a {
+        color: #14B5D0;
+      }
+
+    }
   }
 }
 
