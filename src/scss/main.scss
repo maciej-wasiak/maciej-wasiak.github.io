@@ -130,7 +130,7 @@ body {
     flex-direction: column;
     position: relative;
     width: 100%;
-    margin: 24px 0;
+    margin: 12px 0;
   
     &__titlebar {
       background-color: #1E1E1E;
@@ -144,7 +144,6 @@ body {
   
     &__github-logo {
       align-self: flex-start;
-      filter: brightness(1000%);
       margin: 24px 16px;
     }
 
@@ -175,7 +174,6 @@ body {
       & a {
         color: #14B5D0;
       }
-
     }
   }
 }
