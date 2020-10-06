@@ -8,7 +8,7 @@ import '../scss/main.scss';
 
 
 function addProject(title, description, demoUrl, githubUrl) {
-    const projects = document.querySelector('.projects');
+    const projects = document.querySelector('.projects__container--js');
     let content = `
     <article class="project">
         <div class="project__titlebar">• • •</div>
