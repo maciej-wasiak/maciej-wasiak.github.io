@@ -11,6 +11,32 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 48px;
+
+  @media screen and (min-width: 500px) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 32px;
+
+  @media screen and (min-width: 500px) {
+    font-size: 20px;
+    line-height: 40px;
+    max-width: 800px;
+  }
+}
+
+section,
+footer {
+  padding: 64px 16px;
+}
+
 .email {
   align-items: center;
   align-self: center;
@@ -227,8 +253,6 @@ body {
       }
     }
   }
-
-  
 }
 
 .footer {
@@ -258,30 +282,4 @@ body {
     font-weight: lighter;
     text-align: center;
   }
-}
-
-h2 {
-  font-size: 36px;
-  line-height: 48px;
-
-  @media screen and (min-width: 500px) {
-    font-size: 48px;
-    line-height: 56px;
-  }
-}
-
-p {
-  font-size: 16px;
-  line-height: 32px;
-
-  @media screen and (min-width: 500px) {
-    font-size: 20px;
-    line-height: 40px;
-    max-width: 800px;
-  }
-}
-
-section,
-footer {
-  padding: 64px 16px;
 }
