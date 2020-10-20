@@ -12,7 +12,7 @@ function addProject(title, description, demoUrl, githubUrl) {
     let content = `
     <article class="project">
         <div class="project__titlebar">• • •</div>
-        <img class="project__github-logo" src="../../public/github.svg" alt="github-logo"/>
+        <img class="project__github-logo" src="github.svg" alt="github-logo"/>
         <div class="project__content">
             <span>project:</span>
             <span class="project__content--title">${title}</span>
